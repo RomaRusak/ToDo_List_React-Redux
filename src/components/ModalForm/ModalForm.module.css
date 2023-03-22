@@ -1,0 +1,12 @@
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form > input[type="text"]:nth-child(1) {
+    margin-bottom: 25px;
+}
+
+.modal-form > input[type="text"]:nth-child(2) {
+    margin-bottom: 15px;
+}

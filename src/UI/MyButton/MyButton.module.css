@@ -1,0 +1,16 @@
+.my-button {
+    padding: 15px 35px;
+    background-color: lightskyblue;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: whitesmoke;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.disabled {
+    cursor: auto;
+    background-color: rgb(144, 0, 32);
+}

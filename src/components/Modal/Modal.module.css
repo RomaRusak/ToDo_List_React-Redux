@@ -1,0 +1,13 @@
+.modal {
+    padding: 20px;
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 250px);
+    background-color: whitesmoke;
+    z-index: 150;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
