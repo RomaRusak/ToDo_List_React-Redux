@@ -9,16 +9,14 @@ const formStateReducer = (initialState, action) => {
     
     switch (action.type) {
         case 'CHANGE_VALUE':
-            return {...initialState, [action.inputName]: { value: action.val, valid: action.val.length != 0 ? true : false}}
+            return {...initialState, [action.inputName]: { value: action.val, valid: action.val.length !== 0 ? true : false}}
 
         default:
             return initialState
     }
 }
 
-const ModalForm = () => {
-
-    const dispatch = useDispatch()
+const ModalForm = (props) => {
 
     const [formState, dispatchFormState] = useReducer(formStateReducer, {name: {value: '', valid: false}, body: {value: '', valid: false}})
 
@@ -28,8 +26,13 @@ const ModalForm = () => {
         dispatchFormState({type: 'CHANGE_VALUE', inputName, val})
     }
 
+    const dispatch = useDispatch()
+
     const addTodo = (e) => {
         e.preventDefault()
+        const {name : {value : name} , body: {value: body}} = formState
+        dispatch(todoAdd(name, body))
+        props.setShowModal(false)
     } 
 
     useEffect(() => {

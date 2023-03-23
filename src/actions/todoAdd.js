@@ -1,7 +1,8 @@
 const todoAdd = (name, body) => ({
     type: 'TODO_ADD',
     name,
-    body
+    body,
+    time: Date.now() 
 })
 
 export default todoAdd
