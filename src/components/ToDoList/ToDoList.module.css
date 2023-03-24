@@ -1,0 +1,7 @@
+.todo-list-wrapper {
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: .8fr;
+    justify-content: center;
+    grid-row-gap: 25px;
+}

@@ -1,0 +1,32 @@
+.custom-input-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.custom-input-wrapper > label {
+    position: relative;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.custom-input-border {
+    position: relative;
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-color: lemonchiffon;
+    border: 3px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.custom-icon {
+    height: 100%;
+    width: 100%;
+}
+
+.custom-input {
+    display: none;
+}
