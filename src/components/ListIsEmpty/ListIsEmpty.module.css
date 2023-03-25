@@ -1,0 +1,11 @@
+.list-empty-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-empty {
+    font-size: 44px;
+    color: #1560BD;
+    text-shadow: 1px 1px 1px black;
+}

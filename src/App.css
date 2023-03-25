@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
 .App {
   max-width: 1200px;
   margin: 25px auto;

@@ -7,6 +7,10 @@ const toDoReducer = (initialState, action) => {
             })]
         case 'TODO_ADD':
             return [...initialState, {name: action.name, body: action.body, checked: false, time: action.time}]
+        case 'TODO_REMOVE':
+            return [...initialState.filter(item => {
+                return item.time !== action.id
+            })]
         default:
             return initialState
     }
