@@ -13,6 +13,7 @@ const ShowModal = (props) => {
             <MyButton
             onClick={() => {setShowModal(true)}}
             style={{marginBottom: '25px'}}
+            
             >
                 Добавить заметку
             </MyButton>
