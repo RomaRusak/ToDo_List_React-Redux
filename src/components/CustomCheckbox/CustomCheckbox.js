@@ -45,7 +45,7 @@ const CustomCheckbox = (props) => {
                      )
                 }    
             </div>
-            <label htmlFor={props.id}>активен</label>
+            <label htmlFor={props.id}>{props.checked ? 'выполнено' : 'активно'}</label>
         </div>
     )
 }

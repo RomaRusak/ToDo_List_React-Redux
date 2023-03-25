@@ -1,8 +1,9 @@
 .custom-input-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 15px;
+    min-width: 190px;
 }
 
 .custom-input-wrapper > label {

@@ -1,0 +1,7 @@
+.select-input {
+    cursor: pointer;
+}
+
+.select-input > option{
+    padding: 5px;
+}

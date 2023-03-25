@@ -6,8 +6,8 @@
 
 .App {
   max-width: 1200px;
-  margin: 50px auto;
+  margin: 25px auto;
   border: 2px solid black;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 50px);
   padding: 25px;
 }

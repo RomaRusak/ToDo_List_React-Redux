@@ -7,11 +7,11 @@ const TodoItem = ({name, body, checked, time}) => {
 
     return (
         <div
-        className={styles['todo-item-wrapper']}
+        className={checked ? [styles['todo-item-wrapper'], styles['inActive']].join(' ') : styles['todo-item-wrapper']}
         >   
             <div
-            className={styles['todo-item-title']}
-            >
+            className={checked ? [styles['todo-item-title'], styles['crossed-out']].join(' ') : styles['todo-item-title']}
+            >   
                 <h2>{name}</h2>
             </div>
             <CustomCheckbox 
@@ -19,7 +19,11 @@ const TodoItem = ({name, body, checked, time}) => {
             type="checkbox"
             checked={checked}
             />
-            <h3>{body}</h3>
+            <div
+            className={styles['todo-item-description']}
+            >
+                <h3>{body}</h3>
+            </div>
         </div>
     )
 }
